@@ -1,3 +1,8 @@
 <h1>
   {{title}}
+  <input (input)="search$.next($event.target.value)" type="text">
+
+  <ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
 </h1>
